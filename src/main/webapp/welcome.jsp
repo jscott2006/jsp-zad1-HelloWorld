@@ -15,5 +15,14 @@ Licznik odwiedzin: <%= ++visitCount %>
 <!--Komentarz html-->
 <%--Komentarz jsp--%>
 </p>
+<p>
+kontextPath: ${pageContext.request.contextPath}
+</p>
+<p>${header["user-agent"]}
+</p>
+<jsp:forward page="redirected.jsp">
+<jsp:param name="myParam" value="Moj parametr"/>
+</jsp:forward>
 </body>
 </html>
+
